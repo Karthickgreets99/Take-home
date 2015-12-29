@@ -1,4 +1,4 @@
-var Nerd = require('./models/payment');
+var PaymentHistory = require('./models/payment');
 
 module.exports = function(app) {
 
@@ -7,10 +7,10 @@ module.exports = function(app) {
     // authentication routes
 
     // sample api route
-    app.get('/api/paymenthistory', function(req, res) {
+    app.get('/api/payment', function(req, res) {
         // use mongoose to get all nerds in the database
         PaymentHistory.find(function(err, payment) {
-
+            console.log(1)
             // if there is an error retrieving, send the error.
             // nothing after res.send(err) will execute
             if (err)

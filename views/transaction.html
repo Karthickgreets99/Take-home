@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Initial Screen</title>
+    <title>History Screen</title>
 
     <!-- Bootstrap -->
     <link href="../public/css/bootstrap.min.css" rel="stylesheet">
@@ -41,29 +41,50 @@
           .body{
               margin-top: 80px;
           }
+          
+          
       </style>
   </head>
   <body style="background-color:#ffeecc;">
     <nav style="text-align:center;color:white;">
       <p></p>
-      <p><strong>What are we Doing?</strong></p>
+      <p><strong>Transaction History</strong></p>
     </nav>
     <div class="container body">
         <div class="screenCenter">
-            <p>
-                <button class="btn btn-primary btn-lg btn-block" onclick="window.location.href = 'sendmoney.html';" role="button">Send Money</button>
-
-            </p>
-            <p>
-                <button class="btn btn-primary btn-lg btn-block" onclick="window.location.href = 'transaction.html';" role="button" >View Transaction History</button>
-            </p>
+            <table class="table table-hover"> 
+                <thead> 
+                    <tr> 
+                        <th>Date</th> 
+                        <th>Name</th> 
+                        <th>Amount</th> 
+                    </tr> 
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <th scope="row">1/1/2016</th> 
+                        <td>Mark</td> <td>100.00</td>
+                    </tr> 
+                    <tr> 
+                        <th scope="row">2/2/2016</th> 
+                        <td>Jacob</td> <td>200.00</td>
+                    </tr> 
+                    <tr> 
+                        <th scope="row">3/3/2016</th> <td>Larry</td> <td>300.00</td>
+                    </tr> 
+                </tbody> 
+            </table>
         </div>
         
     </div>
     <footer class="footer">
-      
+      <div class="container">
+       <form class="form-inline">
+          <p></p>
+          <button class="btn btn-default" style="width:100%;" onclick="window.history.back();" form="transdetails">Back</button>
+        </form>
+      </div>
     </footer>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="../public/js/bootstrap.min.js"></script>
   </body>
