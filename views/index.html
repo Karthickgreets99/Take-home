@@ -1,70 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Initial Screen</title>
+    <!DOCTYPE>
+        <html lang="en">
+              <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>Initial Screen</title>
 
-    <!-- Bootstrap -->
-    <link href="../public/css/bootstrap.min.css" rel="stylesheet">
+                <!-- Bootstrap -->
+                <link href="../public/css/bootstrap.min.css" rel="stylesheet">
+                <link href="../public/css/paymenrs.css" rel="stylesheet">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-      
-      <style>
-          .screenCenter{
-              margin-left: 3%;
-              margin-right: 3%;
-          }
-          
-          .footer{
-              position: absolute;
-              background-color: black;
-              bottom: 0;
-              width: 100%;
-              height: 60px;
-          }
-          
-          nav{
-              background-color: black;
-              position: absolute;
-              top: 0;
-              width: 100%;
-              height: 60px;
-          }
-          
-          .body{
-              margin-top: 80px;
-          }
-      </style>
-  </head>
-  <body style="background-color:#ffeecc;">
-    <nav style="text-align:center;color:white;">
-      <p></p>
-      <p><strong>What are we Doing?</strong></p>
-    </nav>
-    <div class="container body">
-        <div class="screenCenter">
-            <p>
-                <button class="btn btn-primary btn-lg btn-block" onclick="window.location.href = 'sendmoney.html';" role="button">Send Money</button>
+                <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+                <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+                <!--[if lt IE 9]>
+                  <!--<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>-->
+                  <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
+                <!--<![endif]&ndash;&gt;-->
 
-            </p>
-            <p>
-                <button class="btn btn-primary btn-lg btn-block" onclick="window.location.href = 'transaction.html';" role="button" >View Transaction History</button>
-            </p>
-        </div>
-        
-    </div>
-    <footer class="footer">
-      
-    </footer>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="../public/js/bootstrap.min.js"></script>
-  </body>
-</html>
+              </head>
+              <body>
+                <nav>
+                  <p><strong>PayPal Payments Demo</strong></p>
+                </nav>
+                    <div class="container body">
+                        <div class="screenCenter">
+                            <p>
+                                <button class="btn btn-primary btn-lg btn-block" onclick="window.location.href = '/views/sendmoney.html';" role="button">Send Money</button>
+                            </p>
+                            <p>
+                                <button class="btn btn-primary btn-lg btn-block" onclick="window.location.href = '/views/transaction.html';" role="button" >View Transaction History</button>
+                            </p>
+                        </div>
+
+                    </div>
+                <footer class="footer">
+
+                </footer>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+                <script src="../public/js/bootstrap.min.js"></script>
+
+              </body>
+        </html>

@@ -10,7 +10,7 @@ module.exports = function(app) {
     app.get('/api/payment', function(req, res) {
         // use mongoose to get all nerds in the database
         PaymentHistory.find(function(err, payment) {
-            console.log(1)
+            //console.log(1)
             // if there is an error retrieving, send the error.
             // nothing after res.send(err) will execute
             if (err)
