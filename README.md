@@ -12,7 +12,7 @@
 - npm install
 - bower install
 - npm index.js
-
-to run//
+//Run
 sudo node server.js
 -
+//Responsive app for mobile as well as tablets.
