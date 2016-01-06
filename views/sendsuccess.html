@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Success Screen</title>
+    <title>Confirmation</title>
 
     <!-- Bootstrap -->
     <link href="../public/css/bootstrap.min.css" rel="stylesheet">
+      <link href="../public/css/sendsucess.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -16,47 +17,18 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
       
-      <style>
-          .screenCenter{
-              margin-left: 3%;
-              margin-right: 3%;
-          }
-          
-          .footer{
-              position: absolute;
-              background-color: black;
-              bottom: 0;
-              width: 100%;
-              height: 60px;
-          }
-          
-          nav{
-              background-color: black;
-              position: absolute;
-              top: 0;
-              width: 100%;
-              height: 60px;
-          }
-          
-          .body{
-              position: absolute;
-              top: 40%;
-              bottom: 50%;
-              margin-left: 15%;
-              text-align: center;
-          }
-      </style>
+
   </head>
   <body style="background-color:#ffeecc;">
     <nav style="text-align:center;color:white;">
       <p></p>
-      <p><strong>Send Money</strong></p>
+      <p><strong>Transaction success</strong></p>
     </nav>
     <div class="container body">
         <div class="screenCenter">
             
                 <p>
-                    You have amount sent USD to name!
+                    You have amount sent USD to the user.
                 </p>
                 <p>
                     <span class="glyphicon glyphicon-ok" aria-hidden="true" style="color:orange;font-size:100px;"></span>
@@ -66,10 +38,10 @@
     </div>
     <footer class="footer">
       <div class="container">
-       <form class="form-inline">
+       <form class="form-inline footer-class">
           <p></p>
-          <button class="btn btn-default" style="width:150px;" onclick="window.location.href = 'sendmoney.html';" form="transdetails">Send Money</button>
-          <button type="submit" class="btn btn-default" style="width:150px;float:right;" onclick="window.location.href = 'transaction.html';" form="transdetails">Transaction History</button>
+          <button class="btn btn-default" style="width:150px;" onclick="window.location.href = '/views/sendmoney.html';" form="transdetails">Send Money</button>
+          <button type="submit" class="btn btn-default" style="width:150px;float:right;" onclick="window.location.href = '/views/transaction.html';" form="transdetails">Transaction History</button>
         </form>
       </div>
     </footer>

@@ -1,18 +1,14 @@
 var express = require('express');
 var parsedJSON = require('../mocks/map');
 
-//var grouter = express.Router();
 
 exports.getSymbol = function (req,res){
-    res.json(parsedJSON);
+    var currency = (req.query.currencySyml) ? req.query.currencySyml : '$' ;
+    //console.log(currency,parsedJSON);
+        if(parsedJSON.hasOwnProperty(currency)){
+            var symbol = parsedJSON[currency]
+            //console.log(symbol);
+        }
+    res.send(symbol);
 }
 
-//grouter.get('/', function(req, res) {
-//    res.json(parsedJSON);
-//});
-//
-//
-//
-//
-//
-//module.exports = grouter;
