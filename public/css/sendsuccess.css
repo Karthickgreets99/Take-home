@@ -1,0 +1,21 @@
+
+.body{
+    position: absolute;
+    top: 25%;
+    bottom: 50%;
+    margin-left: 8%;
+    text-align: center;
+}
+
+.btn-success-screen{
+   width:140px;
+}
+.btn-transaction{
+    float:right;
+    padding: 6px 8px !important;
+}
+
+.ok-font-color{
+    color:orange;
+    font-size:100px;
+}

@@ -8,6 +8,7 @@
 
         <!-- Bootstrap -->
         <link href="../public/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../public/css/common.css" rel="stylesheet">
         <link href="../public/css/sendmoney.css" rel="stylesheet">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -17,7 +18,7 @@
           <!--<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>-->
         <!--<![endif]&ndash;&gt;-->
       </head>
-      <body style="background-color:#ffeecc;">
+      <body>
         <nav>
             <p>
                 <!--<span>-->
@@ -32,14 +33,14 @@
         <div class="container body">
 
             <div class="screenCenter">
-                <div id="overlay" style="display:none;"><img id = "myImage" src = "../public/images/ajax-loader.gif"></div>
+                <div id="overlay" class="overlay-hide"><img id = "myImage" src = "../public/images/ajax-loader.gif"></div>
                 <form id="transdetails">
 
                     <!--<div class="form-group">
                         <input class="form-control" type="text" placeholder="Email">
                         <span class="label">To:</span>
                     </div>-->
-                   <div class="input-group">
+                   <div class="input-group email-text-box">
                       <span class="input-group-addon">To:</span>
                       <input type="text" class="form-control" id="email" placeholder="john@henry.com" style="border-left:0px;" required pattern="[^ @]*@[^ @]*">
 
@@ -52,7 +53,7 @@
                                 <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     USD<span class="caret"></span>
                                 </button>
-                                <ul class="dropdown-menu dropdown-position" role="menu">
+                                <ul class="dropdown-menu dropdown-position drop-down-position-custom" role="menu">
                                   <li><a href="#" data-value="USD">USD</a></li>
                                   <li><a href="#" data-value="EUR">EUR</a></li>
                                   <li><a href="#" data-value="JPY">JPY</a></li>
@@ -65,11 +66,11 @@
                                 What's the payment for:
                                 <div class="rb controls">
                                     <div class="rb-success">
-                                        <input type="radio" id="rd1" />
+                                        <input type="radio" name="radio" id="rd1">
                                         <label for="rd1">I'm sending money to family or friends</label>
                                     </div>
                                     <div class="rb-success">
-                                        <input type="radio" id="rd2" />
+                                        <input type="radio"  name="radio" id="rd2">
                                         <label for="rd2">I'm paying for goods or services</label>
                                     </div>
                                 </div>

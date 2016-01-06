@@ -1,0 +1,141 @@
+
+.overlay-hide{
+    display:none;
+}
+.form-group {
+    position: relative;
+}
+
+input[type="text"] {
+    /*padding-left: 50px;*/
+}
+textarea {
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.label{
+    position: absolute;
+    left: 5px;
+    top: 7px;
+    color:black;
+    font-size: 14px;
+}
+
+.rb div {
+    clear: both;
+    overflow: hidden;
+}
+
+.rb label {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #D1D3D4;
+    font-weight: normal;
+}
+
+.rb input[type="radio"]:empty,
+.rb input[type="checkbox"]:empty {
+    display: none;
+}
+
+.rb input[type="radio"]:empty ~ label,
+.rb input[type="checkbox"]:empty ~ label {
+    position: relative;
+    line-height: 2.5em;
+    text-indent: 3.25em;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.rb input[type="radio"]:empty ~ label:before,
+.rb input[type="checkbox"]:empty ~ label:before {
+    position: absolute;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 2.5em;
+    background: #D1D3D4;
+    border-radius: 3px 0 0 3px;
+}
+
+.rb input[type="radio"]:hover:not(:checked) ~ label,
+.rb input[type="checkbox"]:hover:not(:checked) ~ label {
+    color: #888;
+}
+
+.rb input[type="radio"]:hover:not(:checked) ~ label:before,
+.rb input[type="checkbox"]:hover:not(:checked) ~ label:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: #C2C2C2;
+}
+
+.rb input[type="radio"]:checked ~ label,
+.rb input[type="checkbox"]:checked ~ label {
+    color: #777;
+}
+
+.rb input[type="radio"]:checked ~ label:before,
+.rb input[type="checkbox"]:checked ~ label:before {
+    content: '\2714';
+    text-indent: .9em;
+    color: #333;
+    background-color: #ccc;
+}
+
+.rb input[type="radio"]:focus ~ label:before,
+.rb input[type="checkbox"]:focus ~ label:before {
+    box-shadow: 0 0 0 3px #999;
+}
+
+.rb-success input[type="radio"]:checked ~ label:before,
+.rb-success input[type="checkbox"]:checked ~ label:before {
+    color: #fff;
+    background-color: #5cb85c;
+}
+
+.email-text-box{
+    padding-bottom: 15px;
+}
+#currency_value{
+    width:70%;
+    border-radius: 0 0 0 0;
+    border-left: 0;
+}
+
+.drop-down-position-custom{
+    margin-left: 220px;
+        @media (min-width: 320px) and (max-width: 767px) {
+             margin-left: 120px;
+        }
+
+}
+/*remove dropdown in inout type number*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+#overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: 99;
+}
+#overlay #myImage {
+    margin-left: 50%;
+    margin-top: 15%;
+}
