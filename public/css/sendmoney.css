@@ -109,13 +109,9 @@ textarea {
     border-left: 0;
 }
 
-.drop-down-position-custom{
-    margin-left: 220px;
-        @media (min-width: 320px) and (max-width: 767px) {
-             margin-left: 120px;
-        }
 
-}
+
+
 /*remove dropdown in inout type number*/
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -138,4 +134,13 @@ input[type=number]::-webkit-outer-spin-button {
 #overlay #myImage {
     margin-left: 50%;
     margin-top: 15%;
+}
+
+.drop-down-position-custom{
+    margin-left: 200px;
+    min-width: 76px !important;
+    @media screen and (max-width: 768px) {
+        margin-left: 120px;
+    }
+
 }
