@@ -137,10 +137,10 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .drop-down-position-custom{
-    margin-left: 200px;
-    min-width: 76px !important;
-    @media screen and (max-width: 768px) {
-        margin-left: 120px;
-    }
+    margin-left: 217px;
+    min-width: 70px !important;
+    /*@media screen and (max-width: 768px) {*/
+        /*margin-left: 120px;*/
+    /*}*/
 
 }
